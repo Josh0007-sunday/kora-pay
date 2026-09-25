@@ -1,6 +1,6 @@
 {
-  "_comment": "rpcUrl = your deployed Kora server URL (e.g. https://kora-pay.pxxl.app). Update this after deploying to pxxl.",
-  "rpcUrl": "https://kora-pay.pxxl.app",
+  "_comment": "rpcUrl = your deployed Kora server URL.",
+  "rpcUrl": "https://kora-pay.pxxlspace.cv/",
   "fallbackRpcUrls": [],
   "solanaRpcUrl": "https://mainnet.helius-rpc.com/?api-key=YOUR_HELIUS_API_KEY",
   "feeToken": {
