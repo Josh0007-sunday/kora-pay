@@ -11,9 +11,5 @@ ENV KORA_PRIVATE_KEY=""
 ENV SOLANA_RPC_URL=""
 EXPOSE 3000
 
-# kora rpc reads KORA_PRIVATE_KEY + SOLANA_RPC_URL from env, config from disk
-CMD sh -c "kora rpc \
-     --port ${PORT} \
-     --config kora.toml \
-     --signers signers.toml \
-     --rpc-url ${SOLANA_RPC_URL}"
+# kora requires absolute path, global options before 'rpc', and the 'start' subcommand
+CMD sh -c "/usr/local/bin/kora --rpc-url \"${SOLANA_RPC_URL}\" --config kora.toml rpc start --port \"${PORT}\" --signers-config signers.toml"
