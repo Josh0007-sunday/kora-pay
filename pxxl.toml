@@ -1,0 +1,9 @@
+name = "kora-pay"
+domainChoice = "kora-pay"
+runtime = "docker"
+
+[build]
+dockerfile = "Dockerfile"
+
+[env]
+PORT = "3000"

@@ -1,0 +1,46 @@
+{
+  "_comment": "rpcUrl = your deployed Kora server URL (e.g. https://kora-pay.pxxl.app). Update this after deploying to pxxl.",
+  "rpcUrl": "https://kora-pay.pxxl.app",
+  "fallbackRpcUrls": [],
+  "solanaRpcUrl": "https://mainnet.helius-rpc.com/?api-key=YOUR_HELIUS_API_KEY",
+  "feeToken": {
+    "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "symbol": "USDC",
+    "decimals": 6
+  },
+  "authentication": {
+    "apiKey": "",
+    "hmacSecret": "",
+    "method": "none"
+  },
+  "validation": {
+    "maxAllowedLamports": 1000000,
+    "maxSignatures": 10,
+    "allowedPrograms": [
+      "11111111111111111111111111111111",
+      "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL"
+    ],
+    "allowedTokens": [
+      "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+    ],
+    "priceSource": "jupiter",
+    "feePayerPolicy": {
+      "type": "margin",
+      "margin": 0.1
+    }
+  },
+  "timeout": 30000,
+  "retryAttempts": 3,
+  "enabledMethods": [
+    "estimateTransactionFee",
+    "getBlockhash",
+    "getConfig",
+    "getPayerSigner",
+    "getPaymentInstruction",
+    "getSupportedTokens",
+    "signTransaction",
+    "signAndSendTransaction",
+    "transferTransaction"
+  ]
+}

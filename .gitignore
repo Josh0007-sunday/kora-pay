@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Private key and secrets — NEVER commit these
+.env
+*.env
+relayer-keypair.json
+*keypair*.json
+
+# Build output
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
